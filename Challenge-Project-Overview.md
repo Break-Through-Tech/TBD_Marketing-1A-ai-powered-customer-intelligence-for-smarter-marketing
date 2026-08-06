@@ -61,12 +61,15 @@ The model will be evaluated using precision, recall, F1-score, and ROC-AUC. Succ
 ### Project Milestones
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
 | Month | Milestone | Key Activities |
-|-------|-----------|----------------|
-| **September** | Data Exploration & Preprocessing | Conduct EDA on the Online Retail dataset, handle missing values, remove duplicate entries, and identify outliers in purchase frequency and order value. |
-| **October** | Feature Engineering & Baseline Modeling | Aggregate transaction data into customer-level features (RFM analysis), encode categorical variables, and establish baseline performance using logistic regression or random forests. |
-| **November** | Model Optimization & Evaluation | Perform hyperparameter tuning using GridSearchCV or Optuna, validate models against ROC-AUC and F1-score metrics, and interpret model importance. |
-| **December** | Insights, Deliverables & Presentation | Synthesize findings into business personas and marketing recommendations, finalize technical documentation, and prepare the final stakeholder presentation. |
+| :--- | :--- | :--- |
+| September | Data Processing, EDA & Feature Engineering | • Ingest and clean the Online Retail dataset (handling negative quantities, missing Customer IDs, and cancelled transactions).<br>• Aggregate transactional data at the customer level to engineer Recency, Frequency, and Monetary (RFM) metrics.<br>• Perform Exploratory Data Analysis (EDA) on customer purchasing patterns, order distributions, and revenue drivers.<br>• Establish baseline metrics and create cross-validation splits for downstream modeling. |
+| October | Customer Segmentation & Predictive Modeling | • Apply unsupervised clustering (K-Means, Hierarchical Clustering, or Gaussian Mixture Models) on RFM features to define distinct customer personas.<br>• Train supervised classification models (Logistic Regression, Random Forest, XGBoost) to predict repeat purchase probability and churn risk.<br>• Evaluate model performance using Precision, Recall, F1-Score, and ROC-AUC.<br>• Fine-tune hyperparameters and address class imbalance. |
+| November / December | Explainability, Marketing Strategy & Interactive UI | • Integrate model interpretability using SHAP values to identify key behavioral triggers driving repeat purchases.<br>• Translate segment profiles into actionable marketing strategies and campaign recommendations.<br>• Build an interactive Streamlit application to display customer risk scoring, segment distributions, and purchase predictions.<br>• Finalize project documentation, reproducible GitHub repository, and executive pitch deck. |
 
+### Stretch Goals
+* **Customer Lifetime Value (CLV) Modeling:** Implement probabilistic models (such as BG/NBD and Gamma-Gamma) to forecast future transactional value per customer segment.
+* **Market Basket Analysis & Next-Best-Action Recommender:** Apply association rule mining (Apriori / FP-Growth) or collaborative filtering to generate personalized product recommendations for targeted customer segments.
+* **Interactive Campaign Simulator:** Build a scenario-testing widget within the Streamlit UI to estimate ROI and revenue lift based on targeted marketing interventions.
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 ---
