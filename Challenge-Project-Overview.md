@@ -53,24 +53,25 @@ Witomni is a forward-thinking organization dedicated to optimizing marketing per
 
 ## 🎯 The Challenge
 ### Project Summary
-The team will develop a classification model using ecommerce transaction data to predict future customer purchase behavior, specifically identifying potential repeat purchasers. By integrating supervised machine learning techniques and exploratory data analysis, the project aims to help Witomni prioritize high-value segments and refine retention strategies.
+In this project, you will use publicly available ecommerce transaction data and supervised machine learning techniques to build a model that predicts which customers are most likely to become repeat purchasers. This will help our company identify high-value customer segments, prioritize marketing efforts, and develop more effective customer retention strategies.
 
 ### Success Criteria
-The model will be evaluated using precision, recall, F1-score, and ROC-AUC. Success also includes the team's ability to explain model predictions and translate insights into practical marketing recommendations that improve customer engagement and retention.
+Success will be measured by the team’s ability to build a well-performing classification model using appropriate evaluation metrics such as precision, recall, F1-score, and ROC-AUC. Equally important is the team’s ability to explain the model’s predictions and translate those insights into practical marketing recommendations that could improve customer engagement and retention.
+
+### Stretch Goals
+If the team progresses ahead of schedule, they may:   
+• Develop a simple interactive dashboard to visualize customer insights.   
+• Build an LLM-powered assistant that generates personalized marketing recommendations for predicted customer segments.   
+• Compare additional machine learning algorithms.   
 
 ### Project Milestones
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
-| Month | Milestone | Key Activities |
-| :--- | :--- | :--- |
-| September | Data Processing, EDA & Feature Engineering | • Ingest and clean the Online Retail dataset (handling negative quantities, missing Customer IDs, and canceled transactions).<br>• Aggregate transactional data at the customer level to engineer Recency, Frequency, and Monetary (RFM) metrics.<br>• Perform Exploratory Data Analysis (EDA) on customer purchasing patterns, order distributions, and revenue drivers.<br>• Establish baseline metrics and create cross-validation splits for downstream modeling. |
-| October | Customer Segmentation & Predictive Modeling | • Apply unsupervised clustering (K-Means, Hierarchical Clustering, or Gaussian Mixture Models) on RFM features to define distinct customer personas.<br>• Train supervised classification models (Logistic Regression, Random Forest, XGBoost) to predict repeat purchase probability and churn risk.<br>• Evaluate model performance using Precision, Recall, F1-Score, and ROC-AUC.<br>• Fine-tune hyperparameters and address class imbalance. |
-| November / December | Explainability, Marketing Strategy & Interactive UI | • Integrate model interpretability using SHAP values to identify key behavioral triggers driving repeat purchases.<br>• Translate segment profiles into actionable marketing strategies and campaign recommendations.<br>• Build an interactive Streamlit application to display customer risk scoring, segment distributions, and purchase predictions.<br>• Finalize project documentation, reproducible GitHub repository, and executive pitch deck. |
 
-### Stretch Goals
-* **Customer Lifetime Value (CLV) Modeling:** Implement probabilistic models (such as BG/NBD and Gamma-Gamma) to forecast future transactional value per customer segment.
-* **Market Basket Analysis & Next-Best-Action Recommender:** Apply association rule mining (Apriori / FP-Growth) or collaborative filtering to generate personalized product recommendations for targeted customer segments.
-* **Interactive Campaign Simulator:** Build a scenario-testing widget within the Streamlit UI to estimate ROI and revenue lift based on targeted marketing interventions.
-> **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
+| Month | Milestone | Key Activities |
+|---|---|---|
+| September | Business Understanding & Data Exploration | • Understand the business problem and success criteria.<br>• Explore and clean the dataset.<br>• Perform exploratory data analysis and visualization.<br>• Engineer customer-level features (e.g., purchase frequency, recency, average order value). |
+| October | Model Development & Selection | • Develop and compare multiple classification models.<br>• Evaluate model performance using appropriate metrics.<br>• Identify the most important features influencing predictions.<br>• Refine the best-performing model. |
+| November | Business Insights & Final Delivery | • Translate model results into actionable marketing recommendations.<br>• Develop customer personas based on model outputs.<br>• Prepare a final presentation, technical documentation, and business recommendations.<br>• (Stretch Goal) Use an LLM to generate personalized marketing recommendations based on customer profiles. |
 
 ---
 
@@ -78,55 +79,78 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 **Name and Source:** Online Retail Dataset (Publicly available)  
 **Format:** CSV / Structured tabular data  
 **Size:** under 1gb  
-**Location:** Accessible via standard data repositories like UCI Machine Learning Repository or Kaggle.
+**Location:** https://archive.ics.uci.edu/dataset/352/online+retail
 
 ### Key Details
-- Publicly available ecommerce transaction data (Online Retail dataset) containing numerical and categorical information. Features include purchase frequency, recency, and average order value.
-- Data requires normalization of currency values, handling of return transaction records, and feature creation for "time since last purchase" to define target labels.
-
+- [Brief description of what's in the data]
+- [Any known limitations or preprocessing needed]
+- [Link to data dictionary or documentation, if available]
+  
 ---
 
 ## 🛠️ Suggested Approach
-**ML Problem Type:** Classification  
-**Recommended Libraries:**
-- Python (Pandas, Scikit-Learn, XGBoost/LightGBM)
-- Google Colab
-- Large Language Models (LLMs) / Generative AI (for persona generation)
-- Excel (for initial data investigation)
-**Evaluation Metrics:** Precision, Recall, F1-Score, and ROC-AUC to ensure a balance between predictive accuracy and business utility.
 
+**ML Problem Type:** Classification, Large Language Models (LLMs)/ Generative AI  
+
+**Recommended Libraries:**
+- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
+
+**Evaluation Metrics:**
+- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+  
 ---
 
 ## 📚 Resources to Get Started
+
 The following resources will help your team understand the problem space and potential technical approaches for this project:
+
 **Background Reading:**
-- Introduction to Recency, Frequency, Monetary (RFM) segmentation models for ecommerce.
+- [e.g., Link to an article or blog post about the problem domain]
+- [e.g., Link to an industry report or case study]
+
 **Technical Tutorials:**
-- Scikit-Learn documentation on binary classification workflows and feature transformation pipelines.
+- [e.g., Link to a free tutorial on the ML technique(s) involved]
+- [e.g., Link to documentation for a key library or tool]
+
 **Code Examples:**
-- Sample Jupyter Notebooks demonstrating RFM analysis and supervised learning pipelines for customer churn/retention prediction.
+- [e.g., Link to a relevant GitHub repo]
+- [e.g., Link to a sample implementation or starter code]
+
+**Other:**
+- [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
+
+*Feel free to explore beyond these, and share anything interesting you find with me!*
 
 ---
 
 ## 🤝 How We'll Work Together
-**Check-ins:** During our biweekly 60-min AI Studio Lab Section meeting block (2nd and 4th week of every month)  
-**Communication:** Slack/Email workspace provided by Witomni  
-**Response time:** Within 48 hours during standard business days  
-**Recommended Tools:**
-- **Coding:** Google Colab Free Tier  
-- **Collaboration:** GitHub, Notion  
-- **Virtual Meetings:** Zoom, Google Meet  
+
+**Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
+
+ **Other ways to reach out to me with questions:** 
+* [e.g., Your team's channel within Break Through Tech’s Discord space]
+* [e.g., Email; please copy your teammates and AI Studio Coach]
+* [e.g., Request a team check-in on Zoom]
+* [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
+
+> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
+
+**Recommended free coding / collaboration tools**
+* […]
+* […]
 
 ---
 
 ## 🚀 Getting Started
-1. **Review this overview document** and note any questions for our first meeting.
-2. **Begin reviewing the dataset** using the link provided in the Dataset section.
-3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
 
-I'm excited to work with you!
+1. **Review this overview document** and note any questions for our first meeting
+2. **Begin reviewing the dataset** using the link above
+3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+
+I’m excited to work with you!
 
 ---
 
 ## ❓ Questions?
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
+
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session C). 
