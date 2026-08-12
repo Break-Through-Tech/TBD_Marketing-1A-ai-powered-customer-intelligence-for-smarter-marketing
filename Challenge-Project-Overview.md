@@ -47,7 +47,7 @@ The project demonstrates strong applicability to real-world marketing challenges
 ---
 
 ## 🏢 About Witomni
-Witomni is a forward-thinking organization dedicated to optimizing marketing performance through advanced data analytics and predictive intelligence. By leveraging machine learning, the team aims to transform raw transaction history into actionable insights that empower businesses to better understand and serve their unique customer base.
+WitOmni is a forward-thinking organization dedicated to helping founder-led companies grow using AI for marketing initiatives from strategy to campaign execution. By leveraging machine learning, the team aims to transform raw transaction history into actionable insights that empower businesses to better understand and serve their unique customer base.
 
 ---
 
@@ -82,9 +82,21 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 **Location:** https://archive.ics.uci.edu/dataset/352/online+retail
 
 ### Key Details
-- [Brief description of what's in the data]
+- This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+
 - [Any known limitations or preprocessing needed]
+ 
 - [Link to data dictionary or documentation, if available]
+- - Additional Variable Information
+
+InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation. 
+StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
+Description: Product (item) name. Nominal.
+Quantity: The quantities of each product (item) per transaction. Numeric.	
+InvoiceDate: Invoice Date and time. Numeric, the day and time when each transaction was generated.
+UnitPrice: Unit price. Numeric, Product price per unit in sterling.
+CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
+Country: Country name. Nominal, the name of the country where each customer resides.
   
 ---
 
@@ -105,6 +117,7 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
+https://www.semanticscholar.org/paper/Data-mining-for-the-online-retail-industry%3A-A-case-Chen-Sain/e43a5a90fa33d419df42e485099f8f08badf2149
 - [e.g., Link to an article or blog post about the problem domain]
 - [e.g., Link to an industry report or case study]
 
@@ -128,10 +141,10 @@ The following resources will help your team understand the problem space and pot
 **Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
 
  **Other ways to reach out to me with questions:** 
-* [e.g., Your team's channel within Break Through Tech’s Discord space]
-* [e.g., Email; please copy your teammates and AI Studio Coach]
-* [e.g., Request a team check-in on Zoom]
-* [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
+* [e.g., Your team's channel within Break Through Tech’s Discord space] 
+* [e.g., Email; please copy your teammates and AI Studio Coach] pallavi@witomni.com
+* Request a team check-in on Zoom: Please use calendly but ideal to reach out to me via email first. CALENDLY: https://calendly.com/pallavi-witomni/discovery-call-ai-marketing  EMAIL:pallavi@witomni.com
+* Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.
 
 > 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
 
