@@ -41,7 +41,8 @@ The project demonstrates strong applicability to real-world marketing challenges
 # AI-Powered Customer Intelligence for Smarter Marketing
 
 **Company / Org:** Witomni  
-**Challenge Advisor:** Pallavi Sharma, pallavi@witomni.com  
+**Challenge Advisor:** Pallavi Sharma, pallavi@witomni.com.  
+**AI Studio Coach:** Bhavya Gopal, bhavya.gopal@breakthroughtech.ai.  
 **Program:** Break Through Tech AI Studio - Fall 2026  
 
 ---
@@ -141,9 +142,9 @@ https://www.semanticscholar.org/paper/Data-mining-for-the-online-retail-industry
 **Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
 
  **Other ways to reach out to me with questions:** 
-* [e.g., Your team's channel within Break Through Tech’s Discord space] 
-* [e.g., Email; please copy your teammates and AI Studio Coach] pallavi@witomni.com
-* Request a team check-in on Zoom: Please use calendly but ideal to reach out to me via email first. CALENDLY: https://calendly.com/pallavi-witomni/discovery-call-ai-marketing  EMAIL:pallavi@witomni.com
+* Your team's channel within Break Through Tech’s Discord space
+* Email: pallavi@witomni.com; please copy your teammates and AI Studio Coach 
+* Request a team check-in on Zoom: Please use calendly but ideal to reach out to me via email first. CALENDLY: https://calendly.com/pallavi-witomni/discovery-call-ai-marketing
 * Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.
 
 > 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
