@@ -54,11 +54,16 @@ WitOmni is a forward-thinking organization dedicated to helping founder-led comp
 
 ## 🎯 The Challenge
 ### Project Summary
-In this project, you will use publicly available ecommerce transaction data and supervised machine learning techniques to build a model that predicts which customers are most likely to become repeat purchasers. This will help our company identify high-value customer segments, prioritize marketing efforts, and develop more effective customer retention strategies.
+In this project, you will use publicly available e-commerce transaction data and supervised machine learning techniques to build a model that predicts which customers are most likely to become repeat purchasers. This will help our company identify high-value customer segments, prioritize marketing efforts, and develop more effective customer retention strategies.
 
 ### Success Criteria
-Success will be measured by the team’s ability to build a well-performing classification model using appropriate evaluation metrics such as precision, recall, F1-score, and ROC-AUC. Equally important is the team’s ability to explain the model’s predictions and translate those insights into practical marketing recommendations that could improve customer engagement and retention.
-
+Success will be measured by the team’s ability to:
+- Build and compare classification models.
+- Evaluate performance using precision, recall, F1-score, and ROC-AUC.
+- Identify the customer behaviors that are most predictive of repeat purchasing.
+- Translate model results into practical marketing recommendations.
+- Clearly explain the model's limitations and assumptions.
+  
 ### Stretch Goals
 If the team progresses ahead of schedule, they may:   
 • Develop a simple interactive dashboard to visualize customer insights.   
@@ -72,7 +77,7 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 |---|---|---|
 | September | Business Understanding & Data Exploration | • Understand the business problem and success criteria.<br>• Explore and clean the dataset.<br>• Perform exploratory data analysis and visualization.<br>• Engineer customer-level features (e.g., purchase frequency, recency, average order value). |
 | October | Model Development & Selection | • Develop and compare multiple classification models.<br>• Evaluate model performance using appropriate metrics.<br>• Identify the most important features influencing predictions.<br>• Refine the best-performing model. |
-| November | Business Insights & Final Delivery | • Translate model results into actionable marketing recommendations.<br>• Develop customer personas based on model outputs.<br>• Prepare a final presentation, technical documentation, and business recommendations.<br>• (Stretch Goal) Use an LLM to generate personalized marketing recommendations based on customer profiles. |
+| November | Business Insights & Final Delivery | • Translate model results into actionable marketing recommendations.<br>• Develop customer segments/personas based on model outputs.<br>• Prepare a final presentation, technical documentation, and business recommendations.<br>• (Stretch Goal) Use an LLM to generate personalized marketing recommendations based on customer profiles. |
 
 ---
 
@@ -83,33 +88,29 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 **Location:** https://archive.ics.uci.edu/dataset/352/online+retail
 
 ### Key Details
-- This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+- This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
 
-- [Any known limitations or preprocessing needed]
- 
-- [Link to data dictionary or documentation, if available]
-- - Additional Variable Information
-
-InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation. 
-StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
-Description: Product (item) name. Nominal.
-Quantity: The quantities of each product (item) per transaction. Numeric.	
-InvoiceDate: Invoice Date and time. Numeric, the day and time when each transaction was generated.
-UnitPrice: Unit price. Numeric, Product price per unit in sterling.
-CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
-Country: Country name. Nominal, the name of the country where each customer resides.
+### Key Variables
+- `InvoiceNo`: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation.
+- `StockCode`: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
+- `Description`: Product (item) name. Nominal.
+- `Quantity`: The quantities of each product (item) per transaction. Numeric.
+- `InvoiceDate`: Invoice Date and time. Numeric, the day and time when each transaction was generated.
+- `UnitPrice`: Unit price. Numeric, Product price per unit in sterling.
+- `CustomerID`: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
+- `Country`: Country name. Nominal, the name of the country where each customer resides.
   
 ---
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** Classification, Large Language Models (LLMs)/ Generative AI  
+**ML Problem Type:** Classification (Primary), Clustering, Generative AI (Stretch)
 
 **Recommended Libraries:**
-- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
+- pandas, numpy, matplotlib, seaborn, scikit-learn, plotly, shap
 
 **Evaluation Metrics:**
-- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+- Accuracy (be wary of class imbalance), Precision/Recall, F1-Score, ROC-AUC, Confusion Matrix
   
 ---
 
@@ -118,20 +119,14 @@ Country: Country name. Nominal, the name of the country where each customer resi
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
-https://www.semanticscholar.org/paper/Data-mining-for-the-online-retail-industry%3A-A-case-Chen-Sain/e43a5a90fa33d419df42e485099f8f08badf2149
-- [e.g., Link to an article or blog post about the problem domain]
-- [e.g., Link to an industry report or case study]
-
-**Technical Tutorials:**
-- [e.g., Link to a free tutorial on the ML technique(s) involved]
-- [e.g., Link to documentation for a key library or tool]
+- Original Dataset Paper
+Chen, D., Sain, S. L., & Guo, K. (2012). [Data mining for the online retail industry: A case study of RFM model-based customer segmentation using data mining.](https://www.semanticscholar.org/paper/Data-mining-for-the-online-retail-industry%3A-A-case-Chen-Sain/e43a5a90fa33d419df42e485099f8f08badf2149)
+- Kumar, N. (2025). [Intelligent customer segmentation: unveiling consumer patterns with machine learning](https://link.springer.com/article/10.1007/s43995-025-00180-7)
+- S. Arefin et al. (2024), [Retail Industry Analytics: Unraveling Consumer Behavior through RFM Segmentation and Machine Learning](https://ieeexplore.ieee.org/document/10609927) 
 
 **Code Examples:**
-- [e.g., Link to a relevant GitHub repo]
-- [e.g., Link to a sample implementation or starter code]
+- https://github.com/MinoshPerera/Online-Retail-RFM-Customer-Segmentation
 
-**Other:**
-- [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
 
 *Feel free to explore beyond these, and share anything interesting you find with me!*
 
@@ -146,12 +141,6 @@ https://www.semanticscholar.org/paper/Data-mining-for-the-online-retail-industry
 * Email: pallavi@witomni.com; please copy your teammates and AI Studio Coach 
 * Request a team check-in on Zoom: Please use calendly but ideal to reach out to me via email first. CALENDLY: https://calendly.com/pallavi-witomni/discovery-call-ai-marketing
 * Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.
-
-> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
-
-**Recommended free coding / collaboration tools**
-* […]
-* […]
 
 ---
 
